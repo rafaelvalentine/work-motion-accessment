@@ -1,6 +1,5 @@
 import React from "react"
 import Modal from "react-bootstrap/Modal"
-import Button from "../button"
 import { Wrapper } from "./styles"
 
 export function ModalMain({ children, show, handleClose }: { children: React.ReactNode; show: boolean; handleClose: () => void }) {

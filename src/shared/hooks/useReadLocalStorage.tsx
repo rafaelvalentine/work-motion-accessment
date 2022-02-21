@@ -1,4 +1,4 @@
-
+/* eslint-disable no-console  */
 import { useCallback, useEffect, useState } from "react"
 
 // See: https://usehooks-ts.com/react-hook/use-event-listener

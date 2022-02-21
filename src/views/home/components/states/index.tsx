@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react"
-import {useDispatch, useSelector} from "react-redux"
+import {useDispatch } from "react-redux"
 import { useToggle, useOnClickOutside } from "../../../../shared/hooks"
 import {handleSetEmployeeState} from "../../../../store"
 import { Wrapper } from "./styles"
@@ -13,7 +13,6 @@ interface IProps {
 }
 function States({ newState, handleNewState, employeeId }: IProps) {
     const dispatch = useDispatch()
-    // const { e } = useSelector(state => state.user)
   const [{ state, states, color }, setState] = useState<{ state: string; states: string[]; color: { [key: string]: string } }>({
     states: ["added", "in-check", "approved", "active", "inactive"],
     state: "inactive",

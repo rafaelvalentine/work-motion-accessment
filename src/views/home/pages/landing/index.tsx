@@ -1,9 +1,9 @@
-import React, { Dispatch } from "react"
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import React from "react"
 import { Helmet } from "react-helmet"
 import { connect, ConnectedProps } from "react-redux";
 import { Activity, Employee, Footer, Navbar } from "../../components"
 import { EmployeeState, handleGetEmployee } from "../../../../store"
-// import { useLocalStorage } from "../../../../shared/hooks"
 
 type Props = ConnectedProps<typeof connector>;
 type State = Record<string, unknown>

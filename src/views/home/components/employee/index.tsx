@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react"
 import State from "../states"
 import { Wrapper, StyledLogo as Logo } from "./styles"

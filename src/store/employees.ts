@@ -1,9 +1,9 @@
 /* eslint no-param-reassign: "off" */
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
-
+/* eslint-disable no-console */
+/*  eslint-disable @typescript-eslint/no-explicit-any */
 import { Dispatch } from "react"
 import { createSlice } from "@reduxjs/toolkit"
-import { useLocalStorage, useReadLocalStorage } from "../shared/hooks";
 
 export interface EmployeeState {
   fullName: string

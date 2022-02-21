@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react"
 import { Form, FormikProps, Formik, Field } from "formik"
 import * as Yup from "yup"
@@ -39,7 +40,6 @@ function AddEmployee({
           }}
           validationSchema={AddEmployeeSchema}
           onSubmit={(values, actions) => {
-            console.log("values: ", values)
             handleCreateEmployee({
               ...values,
               employeeId: `${Math.random()}`.substring(0, 5),
