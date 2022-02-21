@@ -1,11 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+// import logo from './logo.svg';
+import { BrowserRouter as Router } from "react-router-dom"
+import Routes from "./routes"
+import "./App.css"
 
-function App() {
+const App = function  () {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
@@ -18,9 +20,14 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
+      {/* <Navbar /> */}
+
+      <Router>
+        <Routes />
+      </Router>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

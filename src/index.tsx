@@ -1,19 +1,24 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from "react"
+import ReactDOM from "react-dom"
 
-import './index.css'
+import "./index.css"
 
-import App from './App'
-import ThemeProvider from './shared/themes/style/stylc'
-import reportWebVitals from './reportWebVitals'
+import { Provider } from "react-redux"
+import App from "./App"
+import ThemeProvider from "./shared/themes/style/stylc"
+import reportWebVitals from "./reportWebVitals"
+import store from "./store"
+import "bootstrap/dist/css/bootstrap.min.css"
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider>
-      <App />
-    </ThemeProvider>
+    <Provider store={store}>
+      <ThemeProvider>
+        <App />
+      </ThemeProvider>
+    </Provider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 )
 
 // If you want to start measuring performance in your app, pass a function
