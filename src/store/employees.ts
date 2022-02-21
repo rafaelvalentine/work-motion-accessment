@@ -60,7 +60,6 @@ const slice = createSlice({
      localStorage.setItem("work-motion:employees", JSON.stringify(state.employees))
     },
     createEmployee(state, action) {
-        console.log("createEmployee=>action: ", action)
       const { employees } = state
       state.employees = [...employees, action.payload]
       localStorage.setItem("work-motion:employees", JSON.stringify(state.employees))
@@ -99,7 +98,6 @@ export const handleSetEmployeeState =
 export const handleCreateEmployee = (data:EmployeeState) => (dispatch: Dispatch<{ payload: EmployeeState; type: string }>) => {
   try {
     // const res = await api.post('/api/auth/logout/')
-    console.log("handleCreateEmployee=> data: ", data)
     return dispatch(createEmployee(data))
   } catch (e: any) {
     return console.error(e.message);
