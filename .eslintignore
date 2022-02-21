@@ -21,3 +21,4 @@ src/setupTests.ts
 *.css
 *.svg
 tailwind.config.js
+server.js
